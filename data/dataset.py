@@ -103,6 +103,7 @@ class ImageDataset(Dataset):
 
     def __getitem__(self, idx):
         image = cv2.imread(self._image_paths[idx], 0)
+        print(type(image))
         image = Image.fromarray(image)
         if self._mode == 'train':
             image = GetTransforms(image, type=self.cfg.use_transforms_type)
