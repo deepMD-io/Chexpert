@@ -1,5 +1,5 @@
 {
-    "train_csv": "/Path/to/train.csv",
+    "train_csv": "/Chexpert/config/train.csv",
     "dev_csv": "/Path/to/dev.csv",
     "backbone": "densenet121",
     "width": 512,
